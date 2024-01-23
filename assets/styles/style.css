@@ -23,9 +23,11 @@ body li a{
 .nav-link{
     color: blueviolet;
     margin: 15px;
+    transition: 0.7s;
 }
 .nav-link:hover{
-    color: rgb(135, 60, 206);
+    color: rgb(235, 227, 243);
+    transition: 0.7s;
 }
 .head-off{
     background-color: rgb(20, 19, 19);
@@ -61,18 +63,97 @@ body li a{
     background-color: rgb(135, 60, 206);
 }
 .menu-cad{
-    border: 1px solid blueviolet;
+    padding: 12px;
+    width: 120px;
     background-color: blueviolet;
     color: aliceblue;
-    
-    border-radius: 10%;
+    transition: 0.7s;
 }
 .menu-cad:hover{
     color: black;
     background-color: rgb(135, 60, 206);
-    border-bottom: none;
     transition: 0.7s;
 }
 .footer{
     margin-left: 480px;
+}
+
+
+/*responsividade*/
+
+
+@media (max-width:480px){
+
+}
+
+@media (min-width:507px) and (max-width:767px){
+    .head-off{
+        min-width: auto;
+    }
+    .total{
+        padding: 0;
+        min-width: 300px;
+        max-width: 500px;
+    }
+    img{
+        display: none;
+    }
+    .footer{
+        width: 60%;
+        margin: 100px;
+    }
+}
+
+@media (min-width:768px) and (max-width:991px){
+    .head-off{
+        min-width: 768px;
+    }
+    .container{
+        margin-left: -10px;
+    }
+    .total{
+
+        width: 768px;
+    }
+    img{
+        margin-top: 150px;
+        width: 37%;
+        height: 10%;
+    }
+    .footer{
+        margin: 200px;
+    }
+}
+@media (min-width:992px) and (max-width:1199px){
+    body{
+        width: 100%;
+    }
+    .head-off{
+        min-width: auto;
+    }
+    .total{
+        width: 900px;
+    }
+    img{
+        margin-top: 80px;
+        width: 30%;
+        height: 5%;
+    }
+    .footer{
+        width: 50%;
+        margin: 400px;
+    }
+}
+
+
+
+@media (min-width:1200px) and (max-width:1919px){
+    .total{
+        width: 1000px;
+    }
+    img{
+        margin-top: 60px;
+        width: 45%;
+        height: 5%;
+    }
 }
